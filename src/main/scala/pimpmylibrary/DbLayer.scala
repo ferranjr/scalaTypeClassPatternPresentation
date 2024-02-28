@@ -51,7 +51,7 @@ object Foobar {
 
 object Sample extends App {
   import HashMapDBOps._
-  val storage = new HashMapDB[Foobar, Int]
+  private val storage = new HashMapDB[Foobar, Int]
 
   storage.insert(Foobar(1, "foobar"))
   println(storage.get(1))
